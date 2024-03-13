@@ -18,8 +18,8 @@ class IText {
         virtual ~IText() = default;
 
         //setters
-        virtual void setFontPath(std::string fontPath) = 0;
-        virtual void setText(std::string text) = 0;
+        virtual void setFontPath(const std::string &fontPath) = 0;
+        virtual void setText(const std::string &text) = 0;
         virtual void setColor(std::unique_ptr<IColor> color) = 0;
         virtual void setPos(std::size_t x, std::size_t y) = 0;
         virtual void setSize(std::size_t x, std::size_t y) = 0;
