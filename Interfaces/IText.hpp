@@ -28,6 +28,7 @@ class IText {
         //getters
         virtual std::string getFontPath() = 0;
         virtual std::string getText() = 0;
+        virtual std::shared_ptr<IColor> getColor() const = 0;
         virtual std::vector<std::size_t> getPos() const = 0;
         virtual std::vector<std::size_t> getSize() const = 0;
         virtual float getRotation() const = 0;
