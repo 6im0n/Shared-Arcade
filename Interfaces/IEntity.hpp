@@ -13,7 +13,6 @@
 
 class IColor {
     public:
-        IColor() = default;
         virtual ~IColor() = default;
 
         //setter
@@ -28,7 +27,6 @@ class IColor {
 
 class IEntity {
     public:
-        IEntity() = default;
         virtual ~IEntity() = default;
 
         //setters

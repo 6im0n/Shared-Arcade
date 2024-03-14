@@ -14,7 +14,6 @@
 
 class IText {
     public:
-        IText() = default;
         virtual ~IText() = default;
 
         //setters
