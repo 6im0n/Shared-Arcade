@@ -12,10 +12,10 @@
 #include "ISound.hpp"
 #include <memory>
 
-class IGames {
+class IGame {
     public:
-        IGames() = default;
-        virtual ~IGames() = default;
+        IGame() = default;
+        virtual ~IGame() = default;
 
         //Game
         virtual void startGame() = 0;
