@@ -12,7 +12,8 @@
 #include "ISound.hpp"
 #include <memory>
 
-class IGame {
+namespace Arcade {
+  class IGame {
     public:
         virtual ~IGame() = default;
 
@@ -29,4 +30,5 @@ class IGame {
         virtual std::vector<std::shared_ptr<IEntity>> getEntities() = 0;
         virtual std::vector<std::shared_ptr<IText>> getTexts() = 0;
         virtual std::vector<std::shared_ptr<ISound>> getSounds() = 0;
-};
+    };
+}

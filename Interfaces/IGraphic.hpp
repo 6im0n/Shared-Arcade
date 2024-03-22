@@ -12,7 +12,8 @@
 #include "ISound.hpp"
 #include <memory>
 
-class IGraphic {
+namespace Arcade {
+  class IGraphic {
     public:
         virtual ~IGraphic() = default;
 
@@ -29,4 +30,5 @@ class IGraphic {
         virtual void displayEntities(std::vector<std::shared_ptr<IEntity>> entities) = 0;
         virtual void displayText(std::vector<std::shared_ptr<IText>> texts) = 0;
         virtual void playSound(std::vector<std::shared_ptr<ISound>> sounds) = 0;
-};
+    };
+}
