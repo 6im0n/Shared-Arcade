@@ -31,10 +31,10 @@ public:
 ## Example `load<_>Instance` Function Prototypes:
 ```cpp
 // Prototype for a game library
-std::unique_ptr<IGame> loadGameInstance();
+extern "C" IGame *loadGameInstance();
 
 // Prototype for a graphical library
-std::unique_ptr<IGraphic> loadGraphicInstance();
+extern "C" IGraphic *loadGraphicInstance();
 ```
 
 ## Usage:
