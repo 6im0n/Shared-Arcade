@@ -24,7 +24,7 @@ namespace Arcade {
 
         //Event
         virtual int getKeyEvent() = 0;
-        virtual std::pair<int, int> getMouseEvent() = 0;
+        virtual std::pair<int, int> getMousePosition() = 0;
 
         //Display
         virtual void displayWindow() = 0;

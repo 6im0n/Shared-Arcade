@@ -25,7 +25,7 @@ namespace Arcade {
 
         //Event
         virtual void catchKeyEvent(int key) = 0;
-        virtual void catchMouseEvent(int x, int y) = 0;
+        virtual void catchMousePosition(int x, int y) = 0;
 
         //UserName
         virtual void setUserName(const std::string &name) = 0;
